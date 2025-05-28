@@ -6,10 +6,11 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'LFBI Docs',
+			title: 'LFBI Student Handbook',
 			logo: {
-				light: './src/assets/logo.svg',
-				dark: './src/assets/logo-dark.svg'
+				light: './src/assets/logo_type_black.png',
+				dark: './src/assets/logo_type_white.png',
+				replacesTitle: true
 			},
 			sidebar: [
 				{
