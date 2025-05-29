@@ -4,7 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://lfbi.pages.github.io/documentation-v2',
+	site: 'https://lfbi.github.io',
+	base: '/documentation-v2',
 	integrations: [
 		starlight({
 			title: 'LFBI Student Handbook',
