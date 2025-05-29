@@ -4,23 +4,33 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://lfbi.pages.github.io/',
+	base: 'documentation-v2',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'LFBI Student Handbook',
+			logo: {
+				light: './src/assets/logo_type_black.png',
+				dark: './src/assets/logo_type_white.png',
+				replacesTitle: true
+			},
 			sidebar: [
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					autogenerate: {
+						directory: '/guides'
+					}
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'References',
+					autogenerate: {
+						directory: '/references'
+					}
 				},
 			],
+			customCss: [
+				'./src/styles/custom.css'
+			]
 		}),
 	],
 });
