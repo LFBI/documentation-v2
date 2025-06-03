@@ -16,9 +16,9 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'New Student Guide',
 					autogenerate: {
-						directory: '/guides'
+						directory: '/getting-started'
 					}
 				},
 				{
