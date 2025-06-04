@@ -2,6 +2,7 @@
 title: Welcome!
 sidebar:
     order: 0
+tableOfContents: false
 ---
 
 Welcome to the Living Faith Bible Institute! We are so excited for you to study God's word with us.
