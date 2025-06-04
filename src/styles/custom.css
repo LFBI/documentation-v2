@@ -38,3 +38,9 @@ h1 {
 [data-has-hero] .page {
 	 background: linear-gradient(to left, var(--bg-accent), transparent);
 }
+
+.card .icon {
+	--sl-icon-color: var(--sl-color-black);
+	--sl-card-border: var(--sl-color-text-accent) !important;
+	--sl-card-bg: var(--sl-color-text-accent) !important;
+}
