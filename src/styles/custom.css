@@ -11,7 +11,7 @@
 	--sl-color-gray-5: #353841;
 	--sl-color-gray-6: #24272f;
 	--sl-color-black: #17181c;
-	--bg-accent: hsla(212, 49%, 44%, 0.4);
+	--bg-hero: #396ca540;
 }
 /* Light mode colors. */
 :root[data-theme='light'] {
@@ -27,7 +27,7 @@
 	--sl-color-gray-6: #eceef2;
 	--sl-color-gray-7: #f5f6f8;
 	--sl-color-black: #ffffff;
-	--bg-accent: hsla(212, 49%, 44%, 0.1);
+	--bg-hero: #396ca510;
 }
 
 h1 {
@@ -36,7 +36,7 @@ h1 {
 }
 
 [data-has-hero] .page {
-	 background: linear-gradient(to left, var(--bg-accent), transparent);
+	 background: linear-gradient(to left, var(--bg-hero), transparent);
 }
 
 .card .icon {
