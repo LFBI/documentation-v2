@@ -41,6 +41,10 @@ h1 {
 	background: linear-gradient(to left, var(--bg-page), transparent);
 }
 
+div.content-panel:first-of-type {
+	background: var(--sl-color-accent-low);
+}
+
 [data-has-hero] .page {
 	 background: linear-gradient(to left, var(--bg-hero), transparent);
 }
