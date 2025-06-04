@@ -27,3 +27,8 @@
 	--sl-color-gray-7: #f5f6f8;
 	--sl-color-black: #ffffff;
 }
+
+h1 {
+	font-family: 'Bebas Neue', var(--sl-font-system);
+	font-weight: 400;
+}
