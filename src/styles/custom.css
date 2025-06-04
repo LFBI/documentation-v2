@@ -58,3 +58,8 @@ div.content-panel:first-of-type {
 	--sl-card-border: var(--sl-color-text-accent) !important;
 	--sl-card-bg: var(--sl-color-text-accent) !important;
 }
+
+.pagination-links .link-title {
+	font-family: 'Bebas Neue', var(--sl-font-system);
+	font-weight: 400;
+}
