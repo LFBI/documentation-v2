@@ -11,6 +11,8 @@
 	--sl-color-gray-5: #353841;
 	--sl-color-gray-6: #24272f;
 	--sl-color-black: #17181c;
+	--bg-hero: #396ca540;
+	--bg-page: #ffedcb10;
 }
 /* Light mode colors. */
 :root[data-theme='light'] {
@@ -26,4 +28,38 @@
 	--sl-color-gray-6: #eceef2;
 	--sl-color-gray-7: #f5f6f8;
 	--sl-color-black: #ffffff;
+	--bg-hero: #396ca510;
+	--bg-page: #ffedcb30;
+}
+
+h1 {
+	font-family: 'Bebas Neue', var(--sl-font-system);
+	font-weight: 400;
+}
+
+.page {
+	background: linear-gradient(to left, var(--bg-page), transparent);
+}
+
+div.content-panel:first-of-type {
+	background: var(--sl-color-accent-low);
+}
+
+[data-has-hero] .page {
+	 background: linear-gradient(to left, var(--bg-hero), transparent);
+}
+
+[data-has-hero] .page .content-panel {
+	 background: none !important;
+}
+
+.card .icon {
+	--sl-icon-color: var(--sl-color-black);
+	--sl-card-border: var(--sl-color-text-accent) !important;
+	--sl-card-bg: var(--sl-color-text-accent) !important;
+}
+
+.pagination-links .link-title {
+	font-family: 'Bebas Neue', var(--sl-font-system);
+	font-weight: 400;
 }
